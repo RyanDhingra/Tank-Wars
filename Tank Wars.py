@@ -19,7 +19,7 @@ bullet_w, bullet_h = 35, 25
 
 #Sounds
 explosion = pygame.mixer.Sound('Sounds/Explosion.mp3')
-explosion.set_volume(0.1)
+explosion.set_volume(0.5)
 powerup_sound = pygame.mixer.Sound('Sounds/Powerup.wav')
 powerup_sound.set_volume(0.07)
 classic_bullet_sound = pygame.mixer.Sound('Sounds/Classic Bullet.ogg')
