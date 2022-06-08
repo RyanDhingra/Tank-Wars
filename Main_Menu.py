@@ -83,7 +83,6 @@ def main_menu(WIN):
             if exit_button.collidepoint(mouse[0], mouse[1]):
                 exit_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Game Exited")
                     click_sound.play()
                     run = False
                     pygame.quit()
@@ -94,7 +93,6 @@ def main_menu(WIN):
             if start_button.collidepoint(mouse[0], mouse[1]):
                 start_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Map Select")
                     click_sound.play()
                     return map_select(WIN)
             else:
@@ -103,7 +101,6 @@ def main_menu(WIN):
             if help_button.collidepoint(mouse[0], mouse[1]):
                 help_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Help Menu")
                     click_sound.play()
                     help_menu()
             else:

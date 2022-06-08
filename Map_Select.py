@@ -427,7 +427,6 @@ def map_select(WIN):
             if classic_label.getRect().collidepoint(mouse[0], mouse[1]):
                 classic_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Map 1 Selected")
                     click_sound.play()
                     return map_one()
             else:
@@ -436,7 +435,6 @@ def map_select(WIN):
             if space_label.getRect().collidepoint(mouse[0], mouse[1]):
                 space_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Map 2 Selected")
                     click_sound.play()
                     return map_two()
             else:
@@ -445,7 +443,6 @@ def map_select(WIN):
             if marine_label.getRect().collidepoint(mouse[0], mouse[1]):
                 marine_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Map 3 Selected")
                     click_sound.play()
                     return map_three()
             else:
@@ -454,7 +451,6 @@ def map_select(WIN):
             if cyber_label.getRect().collidepoint(mouse[0], mouse[1]):
                 cyber_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Map 4 Selected")
                     click_sound.play()
                     return map_four()
             else:

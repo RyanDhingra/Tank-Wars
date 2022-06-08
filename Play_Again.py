@@ -111,7 +111,6 @@ def play_again(WIN, stats_list):
             if exit_button.collidepoint(mouse[0], mouse[1]):
                 exit_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Game Exited")
                     click_sound.play()
                     run = False
                     pygame.quit()
@@ -122,7 +121,6 @@ def play_again(WIN, stats_list):
             if playagain_button.collidepoint(mouse[0], mouse[1]):
                 playagain_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Game Started")
                     click_sound.play()
                     return True
             else:
@@ -131,7 +129,6 @@ def play_again(WIN, stats_list):
             if mainmenu_button.collidepoint(mouse[0], mouse[1]):
                 mainmenu_colour = GREY
                 if (event.type == pygame.MOUSEBUTTONDOWN) and (event.button == 1):
-                    print("Main Menu")
                     click_sound.play()
                     return False
             else:
